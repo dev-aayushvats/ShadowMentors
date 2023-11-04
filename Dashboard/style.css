@@ -78,6 +78,7 @@
   }
   .navigation li {
     /* padding: 0px 25px; */
+    padding: 10px;
     margin: 30px 0;
     display: flex;
     align-items: center;
@@ -94,7 +95,7 @@
   .right {
     flex: 1 1 auto;
     background-color: #f6f6fc;
-    padding: 30px;
+    padding: 50px;
     border-radius: 0 3px 3px 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -250,4 +251,8 @@
   }
   .right .stock-logo.dandruft:before {
     background: linear-gradient(to top right, #f88781, #f7c682);
+  }
+  .onpage{
+    background-color: #F6F6FC;
+    border-radius: 10px;
   }
