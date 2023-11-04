@@ -425,23 +425,6 @@
     }
   }
   
-  .accept-terms {
-      color: #0083fd;
-      text-decoration: none;
-      padding: 0 1px 1px 2px;
-      border-bottom: 1px solid rgba(246, 71, 71, .0);
-      -webkit-transition: all 0.30s ease-in-out;
-        -moz-transition: all 0.30s ease-in-out;
-        -ms-transition: all 0.30s ease-in-out;
-        -o-transition: all 0.30s ease-in-out;
-  }
-  
-  .accept-terms:hover {
-      -webkit-animation: borderslide-2px .5s;
-              animation: borderslide-2px .5s;
-      padding-bottom: 2px;
-      border-bottom: 1px solid rgba(246, 71, 71, 1);
-  }
   
   #login, #signup, #reset-password {
     display: none;
