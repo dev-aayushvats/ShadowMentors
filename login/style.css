@@ -8,9 +8,21 @@
   }
   
   body {
-      background: #d83d3d;
+    background-image: url("landing_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
+
   
+  
+  h1{
+    color: #FFF;
+    font-size: 45px;
+    margin-top: 12%;
+    text-align: center;
+  }
+
   .main-nav {
     width: 90%;
       max-width: 240px;
@@ -20,7 +32,7 @@
   }
   .main-nav ul {
       position: absolute;
-    width: 100%;
+    width: auto;
       top: 40%;
       margin: 0;
       padding: 0;
@@ -32,7 +44,7 @@
   .main-nav a {
     display: block;
     height: 50px;
-      margin: 10px;
+      margin-right: 10px;
       padding: 2px 25px;
       text-decoration: none;
       border-radius: 30px;
@@ -45,21 +57,21 @@
   }
   
   .main-nav li:nth-child(1) a {
-      background: #d83d3d;
+      background: rgb(9, 9, 9);
       border: 2px solid #fff;
   }
   .main-nav li:nth-child(1) a:hover {
-      background: #fff;
-      color: #d83d3d;
+      background: #d7d4d4;
+      color: #1c1c1c;
   }
   
   .main-nav li:nth-child(2) a {
-    background: #9e2c2c;
-      border: 2px solid #9e2c2c;
+    background: #000000;
+      border: 2px solid #faf7f7;
   }
   .main-nav li:nth-child(2) a:hover {
-      background: #b13131;
-      border: 2px solid #b13131;
+      background: #696161;
+      border: 2px solid #ffffff;
   }
   
   .user-modal {
@@ -68,7 +80,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(127, 37, 37, 0.9);
+    
     z-index: 3;
     overflow-y: auto;
     cursor: pointer;
@@ -215,7 +227,7 @@
     outline: none;
   }
   .form input.has-error {
-    border: 1px solid #d76666;
+    border: 1px solid #0e0d0d;
   }
   .form input[type=password] {
     /* space left for the HIDE button */
@@ -224,7 +236,7 @@
   .form input[type=submit] {
     padding: 16px 0;
     cursor: pointer;
-    background: #F64747;
+    background: #595555;
     color: #FFF;
     font-weight: bold;
     border: none;
@@ -239,7 +251,7 @@
         -o-transition: all 0.30s ease-in-out;
   }
   .form input[type=submit]:hover {
-      background: #d83d3d;
+      background: #000000;
   }
   .no-touch .form input[type=submit]:hover, .no-touch .form input[type=submit]:focus {
     background: #d83d3d;
@@ -266,7 +278,7 @@
     position: absolute;
     left: -5px;
     bottom: -35px;
-    background: rgba(215, 102, 102, 0.9);
+    background: rgba(130, 16, 16, 0.9);
     padding: .8em;
     z-index: 2;
     color: #FFF;
@@ -290,7 +302,7 @@
     width: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid rgba(215, 102, 102, 0.9);
+    border-bottom: 8px solid rgba(130, 16, 16, 0.9);
   }
   .form .error-message.is-visible {
     opacity: 1;
@@ -414,7 +426,7 @@
   }
   
   .accept-terms {
-      color: #F64747;
+      color: #0083fd;
       text-decoration: none;
       padding: 0 1px 1px 2px;
       border-bottom: 1px solid rgba(246, 71, 71, .0);
