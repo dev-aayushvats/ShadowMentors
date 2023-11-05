@@ -163,6 +163,16 @@
   .form .fieldset {
     position: relative;
     margin: 1.4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fieldset button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: #b6b6b6;
+    border-radius: 5px;
   }
   .form .fieldset:first-child {
     margin-top: 0;
