@@ -45,7 +45,7 @@
     justify-content: center;
     height: 100px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .profileimg{
@@ -87,7 +87,7 @@
   .navigation li i {
     font-size: 20px;
   }
-  .navigation li span {
+  .navigation li a {
     padding-left: 15px;
     vertical-align: super;
   }
