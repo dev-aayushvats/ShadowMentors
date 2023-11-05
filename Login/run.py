@@ -20,22 +20,23 @@ def close_db(error):
 with app.app_context():
     db = get_db()
     cursor = db.cursor()
-    cursor.execute("CREATE TABLE IF NOT EXISTS students ( username TEXT PRIMARY KEY, email TEXT, password TEXT, no_of_projects INTEGER, xp INTEGER  )")
+    cursor.execute('''CREATE TABLE IF NOT EXISTS students ( username TEXT PRIMARY KEY, email TEXT, password TEXT, no_of_projects INTEGER, xp INTEGER )''')
     db.commit()
 
+@app.route('/home')
 @app.route('/')
 def index1():
     return render_template('index.html')
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 def login():
-    username = request.form.get('username')
-    password = request.form.get('password')
+    username = request.form('username')
+    password = request.form('password')
 
     db = get_db()
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM users WHERE username = ?", (username,))
+    cursor.execute("SELECT * FROM users WHERE username = %s", (username,))
     user = cursor.fetchone()
 
     if user and user[2] == password:  # Assuming email is in column 1 and password is in column 2 of your users table
@@ -43,12 +44,12 @@ def login():
     else:
         return jsonify({"error": "Invalid credentials"})
 
-@app.route('/signup', methods=['POST'])
+@app.route('/signup', methods=['POST','GET'])
 def signup():
     email = request.form.get('email')
     username = request.form.get('username')
     password = request.form.get('password')
-
+    print(username)
     db = get_db()
     cursor = db.cursor()
 

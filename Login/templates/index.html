@@ -22,12 +22,12 @@
         <div class="user-modal">
             <div class="user-modal-container">
                 <ul class="switcher">
-                    <li><a href="#0" class="login-switch">Sign in</a></li>
-                    <li><a href="#0" class="signup-switch">New account</a></li>
+                    <li><a href="/home" class="login-switch">Sign in</a></li>
+                    <li><a href="/home" class="signup-switch">New account</a></li>
                 </ul>
 
                 <div id="login">
-                    <form action = "{{url_for('login')}}" method="get" class="form" id="login-form">
+                    <form action = "/login" method="POST" class="form" id="login-form">
                         <p class="fieldset">
                             <label class="image-replace email" for="signin-email">E-mail</label>
                             <input class="full-width has-padding has-border" id="signin-email" type="email" name="email" placeholder="E-mail">
@@ -55,7 +55,7 @@
                 </div>
 
                 <div id="signup">
-                    <form action = "{{url_for('signup')}}" method="get" class="form" id="signup-form">
+                    <form action = "{{url_for('signup')}}" method="POST" class="form" id="signup-form">
                         <p class="fieldset">
                             <label class="image-replace username" for="signup-username">Username</label>
                             <input class="full-width has-padding has-border" id="signup-username" type="text" name="username" placeholder="Username">
@@ -84,7 +84,7 @@
                 <div id="reset-password">
                     <p class="form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
 
-                    <form action = "{{url_for('reset_password')}}" method="get" class="form" id="reset-password-form">
+                    <form action = "/reset_password" method="POST" class="form" id="reset-password-form">
                         <p class="fieldset">
                             <label class="image-replace email" for="reset-email">E-mail</label>
                             <input class="full-width has-padding has-border" id="reset-email" type="email" name="email" placeholder="E-mail">
@@ -105,5 +105,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 </html>
