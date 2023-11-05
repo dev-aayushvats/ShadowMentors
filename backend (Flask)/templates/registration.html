@@ -1,0 +1,58 @@
+<form method="POST" action="/registration">
+    <!-- Added a form element and specified the 'action' attribute to submit data to the /registration route -->
+    <div class="nice-form-group">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Your name" name="name" id="name" />
+        <!-- Added the 'id' attribute and 'name' attribute -->
+    </div>
+
+    <div class="nice-form-group">
+        <label for="roll_number">Roll Number</label>
+        <input type="text" placeholder="Your roll number" name="roll_number" id="roll_number" />
+        <!-- Added the 'id' attribute and 'name' attribute -->
+    </div>
+    <!-- <div class="nice-form-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Your email" name="email" id="email" />
+    </div> -->
+
+
+
+    <fieldset class="nice-form-group">
+        <legend>Select your role</legend>
+        <div class="nice-form-group">
+            <input type="radio" name="role" id="student" value="Student" />
+            <!-- Added 'value' attribute and an 'id' attribute -->
+            <label for="student">Student</label>
+        </div>
+
+        <div class="nice-form-group">
+            <input type="radio" name="role" id="mentor" value="Mentor" />
+            <!-- Added 'value' attribute and an 'id' attribute -->
+            <label for="mentor">Mentor</label>
+        </div>
+    </fieldset>
+
+    <div class="nice-form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" placeholder="Your phone number" name="phone" id="phone" />
+        <!-- Added the 'id' attribute and 'name' attribute -->
+    </div>
+
+    <div class="nice-form-group">
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </div>
+
+    <div class="nice-form-group">
+        <label for="birth_date">Birth Date</label>
+        <input type="date" name="birth_date" id="birth_date" />
+    </div>
+
+    <div class="nice-form-group">
+        <input type="submit" value="Submit"> <!-- Added a submit button to submit the form -->
+    </div>
+</form>
